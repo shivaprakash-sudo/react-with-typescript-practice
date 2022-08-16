@@ -10,6 +10,10 @@ h1 {
   text-align: center;
 }
 
+input {
+  font: inherit;
+}
+
 main {
   min-height: 100vh;
   /* display: flex;

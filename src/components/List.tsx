@@ -1,10 +1,11 @@
-import { IPerson } from "../interfaces/Person.js";
+import React from "react";
+import { IPerson } from "../interfaces/IPerson.js";
 
 const List: React.FC<IPerson> = ({ people }) => {
   const renderListElement = (): JSX.Element[] => {
     return people.map((person, index) => (
-      <li className="flex">
-        <div key={index} className="user__container flex">
+      <li key={index} className="flex">
+        <div className="user__container flex">
           <img src={person.url} alt="Avatar" />
           <h2>{person.name}</h2>
         </div>
